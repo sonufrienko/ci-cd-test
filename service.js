@@ -12,7 +12,8 @@ const DB = [
             'Superhuman strength', 
             'Superhuman physiology', 
             'Genius-level tactician'
-        ]
+        ],
+        images: []
     }, {
         name: 'Thor',
         origin: 'Asgard',
@@ -27,7 +28,8 @@ const DB = [
         species: 'Asgardian',
         abilities: [
             'Superhuman strength, speed, durability and longevity'
-        ]
+        ],
+        images: []
     }
 ];
 
