@@ -1,0 +1,26 @@
+# Do not change version. This is the version of aws buildspec, not the version of your buldspec file.
+version: 0.2
+
+env:
+  variables:
+    TEST_ENV: "hello"
+
+phases:
+  install:
+    commands:
+      - echo Installing source NPM dependencies...
+      - npm i
+  build:
+    commands:
+      # Discover and run unit tests in the 'tests' directory
+      - echo Build started on `date`
+      - echo Compiling the Node.js code
+      - npm test
+  post_build:
+    commands:
+      - echo Build completed on `date`
+artifacts:
+  type: zip
+  files:
+    - '**/*'
+  name: hero-$(date +%Y-%m-%d)
