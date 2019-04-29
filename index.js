@@ -20,8 +20,10 @@ app.get('/hero/:name', async (req, res) => {
     res.status(response ? 200 : 404).send(response);
 })
 
-app.listen(PORT, () => {
-    console.log(`Server listening on http://localhost:${PORT}`);
-});
+if (NODE_ENV !== 'test') {
+	app.listen(PORT, () => {
+		console.log(`Server listening on http://localhost:${PORT}`);
+	});
+}
 
 module.exports = app;
