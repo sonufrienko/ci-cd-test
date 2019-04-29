@@ -13,6 +13,21 @@ const DB = [
             'Superhuman physiology', 
             'Genius-level tactician'
         ]
+    }, {
+        name: 'Thor',
+        origin: 'Asgard',
+        team: [
+            'Avengers',
+            'Warriors Three',
+            'Thor Corps',
+            'God Squad',
+            'Avengers Unity Squad'
+        ],
+        alias: 'Siegmund',
+        species: 'Asgardian',
+        abilities: [
+            'Superhuman strength, speed, durability and longevity'
+        ]
     }
 ];
 
