@@ -3,6 +3,7 @@ const bodyParser = require('body-parser');
 const { getHeroByName } = require('./service');
 
 const PORT = 4000;
+const { NODE_ENV } = process.env;
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
