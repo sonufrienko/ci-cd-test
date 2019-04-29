@@ -1,0 +1,15 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /var/www/hero
+#hooks:
+#  BeforeInstall:
+#    - location: scripts/install_dependencies.sh
+#  AfterInstall:
+#    - location: scripts/change_permissions.sh
+#  ApplicationStart:
+#    - location: scripts/start_server.sh
+#    - location: scripts/create_test_db.sh
+#  ApplicationStop:
+#    - location: scripts/stop_server.sh
