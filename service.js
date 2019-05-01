@@ -1,6 +1,6 @@
 const DB = [
     {
-        name: 'Tan-os',
+        name: 'Tan-o-s',
         origin: 'Titan',
         team: [
             'Infinity Watch', 
